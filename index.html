@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.3">
+<title>Ritmo Expor columtador | Informe Interactivo de Exportaciones</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.dcdbf18e.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.dcdbf18e.css">
+<link rel="modulepreload" href="./_observablehq/client.e2a97524.js">
+<link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.8c3f433e.js">
+<link rel="modulepreload" href="./_npm/maplibre-gl@5.15.0/4c3c9e9c.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/e780feca.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/72f4716c.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/d761ef9b.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/xlsx.a4de1d7b.js">
+<link rel="modulepreload" href="./_npm/exceljs@4.4.0/222f7a0c.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e93ca09f.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/0f2de24d.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/65eb105b.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/7ef8fb2e.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/aeb57b94.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/1d2aed74.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/5ced1d52.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/9ba9c7f3.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/4202580c.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9cffc2bd.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/cdd7e898.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/b4e2ad9a.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e804d15.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/86074ef6.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/40599fb3.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/e49e792c.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/8d1e5425.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/20d3f133.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/7553081f.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/0dfd751c.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/3c90ee06.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/843b6a76.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/ba24c2e7.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/4d94e5b7.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/6d3a6726.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/9f03c579.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/07c9626f.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/b58a267d.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/004da2ac.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/b5786b3f.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/18cbf477.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/53fe8176.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/e08981d9.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/02d43215.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/cbf6ba23.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/aa00730b.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.e2a97524.js";
+import {registerFile} from "./_observablehq/stdlib.8c3f433e.js";
+
+registerFile("./CuadroColombia.xlsx", {"name":"./CuadroColombia.xlsx","mimeType":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","path":"./_file/CuadroColombia.705b062f.xlsx","lastModified":1768943869515,"size":11493});
+registerFile("./CuadroManufactura.xlsx", {"name":"./CuadroManufactura.xlsx","mimeType":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","path":"./_file/CuadroManufactura.b1c3008e.xlsx","lastModified":1768943869516,"size":11334});
+registerFile("./CuadroValle.xlsx", {"name":"./CuadroValle.xlsx","mimeType":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","path":"./_file/CuadroValle.5f0f898c.xlsx","lastModified":1768943869519,"size":12542});
+registerFile("./DestinosValle.xlsx", {"name":"./DestinosValle.xlsx","mimeType":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","path":"./_file/DestinosValle.2c82d463.xlsx","lastModified":1768943869520,"size":9437});
+registerFile("./Grafico1.xlsx", {"name":"./Grafico1.xlsx","mimeType":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","path":"./_file/Grafico1.bb540dc8.xlsx","lastModified":1768878985000,"size":26424});
+registerFile("./Graficomensual.xlsx", {"name":"./Graficomensual.xlsx","mimeType":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","path":"./_file/Graficomensual.d84790b7.xlsx","lastModified":1768943869521,"size":10784});
+registerFile("./Graficotorta.xlsx", {"name":"./Graficotorta.xlsx","mimeType":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","path":"./_file/Graficotorta.cbac8663.xlsx","lastModified":1768943869522,"size":26397});
+registerFile("./GraficotortaDestinos.xlsx", {"name":"./GraficotortaDestinos.xlsx","mimeType":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","path":"./_file/GraficotortaDestinos.30e36f4a.xlsx","lastModified":1768943869523,"size":26381});
+registerFile("./HistoricoManufacturas.xlsx", {"name":"./HistoricoManufacturas.xlsx","mimeType":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","path":"./_file/HistoricoManufacturas.7f6f1d53.xlsx","lastModified":1768943869523,"size":9284});
+registerFile("./MapaDepartamentos.xlsx", {"name":"./MapaDepartamentos.xlsx","mimeType":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","path":"./_file/MapaDepartamentos.930ede33.xlsx","lastModified":1768943869528,"size":10259});
+
+define({id: "81aa8f67", inputs: ["FileAttachment","d3","Plot"], outputs: ["datosExcel","hojaExportaciones","expCO","graficoPrensa"], body: async (FileAttachment,d3,Plot) => {
+// BLOQUE UNIFICADO: Cargar y Transformar datos del Excel
+const datosExcel = await FileAttachment("./Grafico1.xlsx").xlsx();
+const hojaExportaciones = datosExcel.sheet(0, {headers: true});
+
+// Transformar a formato para el gráfico
+const expCO = [];
+hojaExportaciones.forEach(row => {
+  const anio = parseInt(row.Columna1 || row.Año);
+  
+  // Limpieza de datos (Redondeo)
+  const total = Math.round(parseFloat(row.Totales || row.Total) || 0);
+  const sinPetroleo = Math.round(parseFloat(row["Sin petróleo"] || row["Sin petróleo y sus derivados"]) || 0);
+  
+  if (anio && !isNaN(anio)) {
+    expCO.push(
+      {anio: anio, serie: "Total", valor: total},
+      {anio: anio, serie: "Sin petróleo", valor: sinPetroleo}
+    );
+  }
+});
+
+// Función del gráfico con ETIQUETAS VERTICALES
+function graficoPrensa(data, {width} = {}) {
+  // CAMBIO: Definimos el formato y forzamos el cambio de ',' a '.'
+  const fmt = (n) => d3.format(",")(n).replace(/,/g, ".");
+  
+  const maxVal = d3.max(data, d => d.valor); 
+
+  return Plot.plot({
+    width,
+    height: 280, 
+    marginTop: 20, 
+    marginRight: 20, 
+    marginBottom: (typeof width !== 'undefined' && width < 600) ? 60 : 30,
+    marginLeft: 50,
+    style: { 
+      fontSize: "11px", 
+      fontFamily: "Arial, sans-serif",
+      background: "transparent"
+    },
+    x: { 
+        label: null, 
+        tickFormat: "d", 
+        tickSize: 0, 
+        tickPadding: 10,
+        tickRotate: (typeof width !== 'undefined' && width < 600) ? -45 : 0,
+        fontSize: (typeof width !== 'undefined' && width < 600) ? 9 : 11
+      },
+    y: { 
+      label: null, 
+      grid: true, 
+      tickFormat: d => fmt(d), // Ahora usa punto
+      domain: [0, maxVal * 1.15],
+      nice: true 
+    },
+    fx: { 
+      axis: null, 
+      padding: 0.2 
+    }, 
+    color: {
+      domain: ["Sin petróleo", "Total"],
+      range: ["#002b49", "#C05805"] // Azul y Naranja
+    },
+    marks: [
+      // 1. Las Barras
+      Plot.barY(data, {
+        x: "anio", 
+        y: "valor", 
+        fx: "serie", 
+        fill: "serie", 
+        inset: 2, 
+        rx: 0,
+        title: d => `${d.serie}\n${d.anio}\nUSD ${fmt(d.valor)}` 
+      }),
+      
+      // 2. ETIQUETAS VERTICALES DENTRO
+      Plot.text(data, {
+        x: "anio", 
+        y: d => d.valor / 2, // Ubicado en la mitad de la barra
+        fx: "serie", 
+        text: d => fmt(d.valor), // Aquí ya saldrá con punto (ej: 33.215)
+        fill: "white",        
+        fontWeight: "normal",
+        rotate: -90,          
+        fontSize: 11
+      }),
+      
+      // 3. Títulos de las facetas (ARRIBA)
+      Plot.text(data, Plot.selectFirst({
+        fx: "serie", 
+        frameAnchor: "top", 
+        text: d => d.serie === "Total" ? "EXPORTACIONES TOTALES" : "SIN PETRÓLEO NI DERIVADOS",
+        fontWeight: "bold", 
+        fontSize: 11, 
+        dy: -10, 
+        fill: "#555"
+      })),
+      
+      Plot.ruleY([0], {strokeWidth: 1.5})
+    ]
+  });
+}
+
+return {datosExcel,hojaExportaciones,expCO,graficoPrensa};
+}});
+
+define({id: "1748ae13", mode: "inline", inputs: ["resize","graficoPrensa","expCO","display"], body: async (resize,graficoPrensa,expCO,display) => {
+display(await(
+resize((width) => graficoPrensa(expCO, {width}))
+))
+}});
+
+define({id: "102516be", inputs: ["FileAttachment","d3","html","display"], outputs: ["datosCuadro","hojaCuadro","productosCol","rowTotal","granTotal"], body: async (FileAttachment,d3,html,display) => {
+// --- CARGA DINÁMICA DEL CUADRO DE PRODUCTOS ---
+const datosCuadro = await FileAttachment("./CuadroColombia.xlsx").xlsx();
+const hojaCuadro = datosCuadro.sheet(0, {headers: true});
+
+// 1. Procesamiento de datos (RESPETANDO ORDEN DEL EXCEL)
+const productosCol = hojaCuadro.map(row => {
+  const getVal = (keys) => {
+    const k = Object.keys(row).find(key => keys.some(x => key.trim().toLowerCase().includes(x.toLowerCase())));
+    return k ? row[k] : null;
+  };
+
+  const producto = getVal(["Grupo", "Producto", "Nombre"]);
+  const v2024 = parseFloat(getVal(["2024"]) || 0);
+  const v2025 = parseFloat(getVal(["2025"]) || 0);
+  
+  // Calculamos variaciones si no vienen
+  const vAbs = v2025 - v2024;
+  const vRel = v2024 !== 0 ? (vAbs / v2024) * 100 : 0;
+  
+  return { 
+    producto: producto, 
+    valor2024: v2024, 
+    valor2025: v2025, 
+    varAbs: vAbs, 
+    varRel: vRel,
+    part: 0 
+  };
+})
+.filter(d => d.producto && (d.valor2025 !== 0 || d.valor2024 !== 0)); // Solo quitamos filas vacías, NO REORDENAMOS
+
+// Detectar Total Nacional para calcular participación (buscando en los datos cargados)
+const rowTotal = productosCol.find(d => d.producto.toLowerCase().includes("total export") || d.producto.toLowerCase().includes("nacional"));
+const granTotal = rowTotal ? rowTotal.valor2025 : d3.sum(productosCol, d => d.valor2025);
+
+// Calcular participación real
+productosCol.forEach(p => p.part = (p.valor2025 / granTotal) * 100);
+
+// 3. Renderizado HTML (ACTUALIZADO CON CENTRADO VERTICAL)
+{
+  const fmt = (n) => Math.round(n).toLocaleString('es-CO').replace(/,/g, '.');
+  const fmtDec = (n) => n.toFixed(1).replace('.', ',');
+
+  const filasHTML = productosCol.map((p, i) => {
+      const nombreMin = p.producto.toLowerCase();
+      // Estilos especiales según tipo de fila
+      const esTotalNacional = nombreMin.includes("total export") || nombreMin.includes("nacional") || nombreMin.includes("colombia");
+      const esTotal20 = nombreMin.includes("total 20") || nombreMin.includes("principales");
+      const esOtros = nombreMin.includes("otros");
+      const esResumen = esTotalNacional || esTotal20 || esOtros;
+
+      // Colores de fondo
+      let bg = ((i % 2 === 0) && !esResumen) ? '#ffffff' : '#f8f9fa';
+      if (esTotal20) bg = '#e3f2fd'; 
+      if (esOtros) bg = '#ffffff';
+      if (esTotalNacional) bg = '#002b49'; 
+
+      const colorTexto = esTotalNacional ? 'white' : (esTotal20 ? '#002b49' : (esOtros ? '#666' : '#333'));
+      const weight = (i < 5 && !esResumen) || esResumen ? 'bold' : 'normal'; 
+      
+      const colVar = p.varAbs >= 0 ? '#0FAA6D' : '#d32f2f'; 
+      const sign = p.varAbs >= 0 ? '+' : '';
+
+      // CAMBIO: Agregado 'vertical-align: middle;' a todos los <td>
+      return `
+        <tr style="background-color: ${bg}; height: ${esResumen ? '26px' : '21px'}; border-bottom: 1px solid #eaeaea; ${esTotalNacional ? 'border-top: 2px solid #002b49;' : ''}">
+          <td style="padding: 2px 6px; vertical-align: middle; text-align: left; font-weight: ${weight}; color: ${colorTexto} !important; border-right: 1px solid rgba(0,0,0,0.05); ${esOtros ? 'font-style:italic;' : ''}">${p.producto}</td>
+          <td style="padding: 2px 6px; vertical-align: middle; text-align: right; font-family: 'Consolas', monospace; font-weight: ${esResumen ? 'bold' : 'normal'}; color: ${colorTexto} !important; border-right: 1px solid rgba(0,0,0,0.05); font-size: 0.7rem;">${fmt(p.valor2024)}</td>
+          <td style="padding: 2px 6px; vertical-align: middle; text-align: right; font-family: 'Consolas', monospace; font-weight: bold; color: ${colorTexto} !important; border-right: 1px solid rgba(0,0,0,0.05); font-size: 0.7rem;">${fmt(p.valor2025)}</td>
+          <td style="padding: 2px 6px; vertical-align: middle; text-align: right; font-family: 'Consolas', monospace; color: ${esTotalNacional ? 'white' : colVar} !important; font-weight: bold; border-right: 1px solid rgba(0,0,0,0.05); font-size: 0.7rem;">${sign}${fmt(p.varAbs)}</td>
+          <td style="padding: 2px 6px; vertical-align: middle; text-align: right; font-family: 'Consolas', monospace; color: ${esTotalNacional ? 'white' : colVar} !important; font-weight: bold; border-right: 1px solid rgba(0,0,0,0.05); font-size: 0.7rem;">${sign}${fmtDec(p.varRel)}</td>
+          <td style="padding: 2px 6px; vertical-align: middle; text-align: right; font-family: 'Consolas', monospace; font-size: 0.7rem; color: ${colorTexto} !important;">${fmtDec(p.part)}</td>
+        </tr>`;
+  }).join("");
+
+  const container = html`
+  <div class="economist-chart-container" style="margin-top: 20px;">
+    <div class="economist-title">20 Principales Grupos de Productos Exportados por el Valle del Cauca (USD Miles)</div>
+    <div style="font-size: 0.7rem; color: #666; margin-bottom: 10px;">Enero-octubre (2025 Vs. 2024)</div>
+
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-family: -apple-system, sans-serif; font-size: 0.75rem; line-height: 1.0;">
+        <thead>
+          <tr style="background-color: #002b49; color: white !important; height: 28px;">
+            <th style="padding: 4px 6px; vertical-align: middle; text-align: left; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">Grupo de productos</th>
+            <th style="padding: 4px 6px; vertical-align: middle; text-align: center; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">2024</th>
+            <th style="padding: 4px 6px; vertical-align: middle; text-align: center; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">2025</th>
+            <th style="padding: 4px 6px; vertical-align: middle; text-align: center; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">Var. Abs</th>
+            <th style="padding: 4px 6px; vertical-align: middle; text-align: center; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">Var. (%)</th>
+            <th style="padding: 4px 6px; vertical-align: middle; text-align: center; font-weight: bold; color: white;">Part. (%)</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpo-tabla">
+           <!-- Inyección JS -->
+        </tbody>
+      </table>
+    </div>
+    
+    <div style="margin-top: 10px; font-size: 0.65rem; color: #888; border-top: 1px solid #eee; padding-top: 8px;">
+      <strong>Fuente:</strong> DIAN, DANE - Cálculos Cámara de Comercio de Cali<br>
+      *Según clasificación 4 dígitos 
+    </div>
+  </div>`;
+  
+  const tbody = container.querySelector("#cuerpo-tabla");
+  tbody.innerHTML = filasHTML; 
+  
+  display(container);
+}
+
+return {datosCuadro,hojaCuadro,productosCol,rowTotal,granTotal};
+}});
+
+define({id: "3b8f0643", inputs: ["FileAttachment"], outputs: ["datosVariacion","hoja"], body: async (FileAttachment) => {
+// Cargar datos desde el archivo Excel
+const datosVariacion = await FileAttachment("./Graficomensual.xlsx").xlsx();
+const hoja = datosVariacion.sheet(0, {headers: true}); // Primera hoja con encabezados
+return {datosVariacion,hoja};
+}});
+
+define({id: "810abf78", inputs: ["hoja"], outputs: ["seriesMensual"], body: (hoja) => {
+// Transformar a formato para Plot.js
+const seriesMensual = [];
+hoja.forEach(row => {
+  const mes = row.Columna1;
+  if (mes && mes !== "Columna1") { // Filtrar encabezado
+    seriesMensual.push(
+      { fecha: mes, region: "Colombia", valor: parseFloat(row.Colombia) || 0 },
+      { fecha: mes, region: "Valle del Cauca", valor: parseFloat(row["Valle del Cauca"]) || 0 }
+    );
+  }
+});
+return {seriesMensual};
+}});
+
+define({id: "7c2b8236", inputs: ["Plot"], outputs: ["graficoVariacionMensual"], body: (Plot) => {
+// Función para crear el gráfico
+function graficoVariacionMensual(data, {width}) {
+  return Plot.plot({
+    width,
+    height: 240,
+    marginTop: 20,
+    marginRight: 35,
+    marginBottom: 40,
+    marginLeft: 45,
+    style: { 
+      background: "transparent", 
+      fontFamily: "Arial, sans-serif",
+      fontSize: "11px"
+    },
+    x: { 
+      label: null,
+      tickRotate: -45,
+      tickPadding: 5
+    },
+    y: { 
+      grid: true, 
+      label: null,
+      axis: null,  // <--- QUITA LA ETIQUETA "↑ Variación (%)"
+      domain: [-20, 35],
+      tickFormat: d => d + "%"
+    },
+    color: {
+      domain: ["Colombia", "Valle del Cauca"],
+      range: ["#00AED9", "#002b49"]
+    },
+    marks: [
+      // Línea de referencia en cero
+      Plot.ruleY([0], {stroke: "#999", strokeWidth: 1.5}),
+      
+      // Líneas principales con suavizado
+      Plot.lineY(data, {
+        x: "fecha",
+        y: "valor",
+        stroke: "region",
+        strokeWidth: 3,
+        curve: "catmull-rom"
+      }),
+      
+      // Puntos finales con etiquetas
+      Plot.text(data, Plot.selectLast({
+        x: "fecha",
+        y: "valor",
+        z: "region",
+        text: d => `${d.valor.toFixed(1)}`,
+        textAnchor: "start",
+        dx: 8,
+        fill: "region",
+        fontWeight: "bold",
+        fontSize: 13
+      })),
+      
+      // NUEVO: Puntos VISIBLES en cada dato para el tooltip
+      Plot.dot(data, {
+        x: "fecha",
+        y: "valor",
+        fill: "region",
+        r: 0,  // Invisible por defecto
+        channels: {region: "region", fecha: "fecha", valor: "valor"},
+        tip: {
+          format: {
+            x: false,  // No mostrar coordenada X
+            y: false,  // No mostrar coordenada Y
+            fill: false, // No mostrar color
+            region: true,
+            fecha: true,
+            valor: (d) => `${d.toFixed(1)}%`  // Formato personalizado
+          }
+        }
+      }),
+      
+      // Puntos que aparecen al hacer hover (opcional para feedback visual)
+      Plot.dot(data, Plot.pointer({
+        x: "fecha",
+        y: "valor",
+        fill: "region",
+        r: 5,
+        stroke: "white",
+        strokeWidth: 2
+      }))
+    ]
+  });
+}
+
+return {graficoVariacionMensual};
+}});
+
+define({id: "002f9571", mode: "inline", inputs: ["resize","graficoVariacionMensual","seriesMensual","display"], body: async (resize,graficoVariacionMensual,seriesMensual,display) => {
+display(await(
+resize((width) => graficoVariacionMensual(seriesMensual, {width}))
+))
+}});
+
+define({id: "41ca87c8", inputs: ["FileAttachment","display","html"], outputs: ["maplibregl","datosMapaRaw","datosMapa","mapaValores","maxValorMapa","minValorMapa","divMapa","fmtK","contenedorMapa","target","map"], body: async (FileAttachment,display,html) => {
+const {default: maplibregl} = await import("./_npm/maplibre-gl@5.15.0/4c3c9e9c.js");
+// ...existing code...
+
+// 1. CARGA DE DATOS DEL EXCEL
+const datosMapaRaw = await FileAttachment("./MapaDepartamentos.xlsx").xlsx();
+const datosMapa = datosMapaRaw.sheet(0, {headers: true});
+
+// Convertir array a objeto para búsqueda rápida
+const mapaValores = {};
+let maxValorMapa = 0;
+let minValorMapa = 0;
+
+datosMapa.forEach(d => {
+  const key = Object.keys(d)[0];
+  const valKey = Object.keys(d)[1];
+  
+  if (d[key]) {
+    const nombreLimpio = d[key].toString().toUpperCase().trim()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, ""); 
+      
+    const nombreCorregido = nombreLimpio === "BOGOTA D.C." ? "BOGOTA" : 
+                            nombreLimpio === "ARCHIPIELAGO DE SAN ANDRES" ? "SAN ANDRES" : 
+                            nombreLimpio;
+
+    const valor = parseFloat(d[valKey]) || 0;
+    mapaValores[nombreCorregido] = valor;
+    
+    if (valor > maxValorMapa) maxValorMapa = valor;
+    if (valor < minValorMapa) minValorMapa = valor;
+  }
+});
+
+if (maxValorMapa === 0) maxValorMapa = 1;
+if (minValorMapa === 0) minValorMapa = -1;
+
+// 2. Estilos y DOM
+display(html`<link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css">`);
+
+const divMapa = html`<div style="position: absolute; top:0; bottom:0; width:100%;"></div>`;
+
+const fmtK = (n) => Math.round(n).toLocaleString('es-CO');
+
+// Contenedor BLANCO
+const contenedorMapa = html`
+  <div style="position: relative; height: 100%; width: 100%; background: #ffffff; border-radius: 4px;">
+    ${divMapa}
+    
+    <!-- CAMBIO: Leyenda movida arriba a la IZQUIERDA (top:10, left:10) para no tapar Amazonas -->
+    <div style="position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.95); padding: 8px 10px; pointer-events:none; border-radius:4px; box-shadow: 0 1px 3px rgba(0,0,0,0.2);">
+      <div style="font-family:Georgia, serif; font-size:9px; text-transform:uppercase; color:#000; margin-bottom:4px; font-weight:bold; text-align:center;">Variación (USD)</div>
+      
+      <div style="background: linear-gradient(90deg, #b71c1c 0%, #ef5350 20%, #f5f5f5 50%, #66bb6a 80%, #0FAA6D 100%); height:8px; width:130px; margin-bottom:4px; border-radius:2px;"></div>
+      
+      <div style="display:flex; justify-content:space-between; font-family:sans-serif; font-size:9px; color:#444;">
+        <span style="color:#c62828; font-weight:bold;">${fmtK(minValorMapa)}</span>
+        <span style="color:#aaa;">0</span>
+        <span style="color:#0FAA6D; font-weight:bold;">+${fmtK(maxValorMapa)}</span>
+      </div>
+    </div>
+  </div>
+`;
+
+const target = document.getElementById("map-target");
+if (target) {
+  target.innerHTML = ""; 
+  target.appendChild(contenedorMapa);
+}
+
+// 3. Inicializar Mapa
+const map = new maplibregl.Map({
+  container: divMapa,
+  style: { 
+    version: 8, 
+    sources: {}, 
+    layers: [{ id: "bg", type: "background", paint: { "background-color": "#ffffff" } }] 
+  },
+  center: [-74.2, 4.0],
+  zoom: 4.5,
+  interactive: true,
+  attributionControl: false
+});
+
+// 4. Lógica de renderizado
+map.on('load', async () => {
+  try {
+    let geoData = null;
+    try {
+      const r1 = await fetch('https://raw.githubusercontent.com/marcovega/colombia-json/master/geojson/departamentos.json');
+      if (r1.ok) geoData = await r1.json();
+    } catch (e) {}
+    if (!geoData) {
+       const r2 = await fetch('https://gist.githubusercontent.com/john-guerra/43c7656821069d00dcbc/raw/be6a6e239cd5b5b803c6e7c2ec405b793a9064dd/Colombia.geo.json');
+       if (r2.ok) geoData = await r2.json();
+    }
+    if (!geoData) return; 
+
+    geoData.features.forEach(f => {
+      let nombreRaw = (f.properties.NOMBRE_DPT || f.properties.name || "").toString().toUpperCase();
+      let nombreNorm = nombreRaw.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      if (nombreNorm === "SANTAFE DE BOGOTA D.C") nombreNorm = "BOGOTA";
+      if (nombreNorm === "BOGOTA D.C.") nombreNorm = "BOGOTA";
+
+      f.properties.nombre_mostrar = nombreRaw;
+      f.properties.valor = mapaValores[nombreNorm] || 0; 
+    });
+
+    map.addSource('colombia', { type: 'geojson', data: geoData });
+    
+    map.addLayer({
+      'id': 'fill', 'type': 'fill', 'source': 'colombia',
+      'paint': {
+        'fill-color': ['interpolate', ['linear'], ['get', 'valor'], 
+             minValorMapa,       '#b71c1c', 
+             minValorMapa * 0.15, '#ef5350', 
+             0,                  '#f5f5f5', 
+             maxValorMapa * 0.15, '#66bb6a', 
+             maxValorMapa,       '#0FAA6D'  
+        ],
+        'fill-opacity': 0.9,
+        'fill-outline-color': '#ffffff' 
+      }
+    });
+
+    map.addLayer({
+      'id': 'line', 'type': 'line', 'source': 'colombia',
+      'paint': { 'line-color': '#ffffff', 'line-width': 1 }
+    });
+
+    const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, maxWidth: '200px' });
+    map.on('mousemove', 'fill', (e) => {
+      map.getCanvas().style.cursor = 'pointer';
+      const p = e.features[0].properties;
+      
+      map.setPaintProperty('fill', 'fill-opacity', [
+        'case', ['==', ['get', 'nombre_mostrar'], p.nombre_mostrar], 0.6, 0.9
+      ]);
+
+      const val = p.valor;
+      const valFmt = Math.round(val).toLocaleString('es-CO');
+      const colorVal = val >= 0 ? '#0FAA6D' : '#c62828'; 
+      const sign = val > 0 ? '+' : '';
+
+      popup.setLngLat(e.lngLat)
+        .setHTML(`<div style="font-family:Georgia, serif; color:#000; padding:4px; text-align:center;">
+                    <div style="font-weight:bold; font-size:11px; border-bottom:1px solid #eee; margin-bottom:3px; padding-bottom:3px;">${p.nombre_mostrar}</div>
+                    <div style="font-family:sans-serif; font-size:12px; color:${colorVal}; font-weight:bold;">${sign}${valFmt} USD</div>
+                  </div>`)
+        .addTo(map);
+    });
+    
+    map.on('mouseleave', 'fill', () => {
+      map.getCanvas().style.cursor = '';
+      popup.remove();
+      map.setPaintProperty('fill', 'fill-opacity', 0.9);
+    });
+
+    const bounds = new maplibregl.LngLatBounds();
+    geoData.features.forEach(f => {
+        const coords = f.geometry.type === 'Polygon' ? f.geometry.coordinates[0] : f.geometry.coordinates.flat(1)[0];
+        coords.forEach(c => bounds.extend(c));
+    });
+    map.fitBounds(bounds, { padding: 20 });
+
+  } catch (e) { console.error(e); }
+});
+return {maplibregl,datosMapaRaw,datosMapa,mapaValores,maxValorMapa,minValorMapa,divMapa,fmtK,contenedorMapa,target,map};
+}});
+
+define({id: "250fe250", inputs: ["FileAttachment","d3","Plot"], outputs: ["datosDestinosRaw","hojaDestinos","dataGrafico","dataVariacion","orden","maxTotal","chartBarrasColumnas"], body: async (FileAttachment,d3,Plot) => {
+// --- CARGA DE DATOS PARA GRÁFICO DESTINOS ---
+const datosDestinosRaw = await FileAttachment("./DestinosValle.xlsx").xlsx();
+const hojaDestinos = datosDestinosRaw.sheet(0, {headers: true});
+
+// 1. Transformación (Mantenemos la detección robusta que ya funciona)
+const dataGrafico = [];
+const dataVariacion = [];
+
+hojaDestinos.forEach(r => {
+  const keys = Object.keys(r);
+  const kPais = keys.find(k => /dest|pais/i.test(k)) || keys[0];
+  const k24 = keys.find(k => k.includes("24"));
+  const k25 = keys.find(k => k.includes("25"));
+
+  const pais = r[kPais]; 
+  const val24 = parseFloat(r[k24]);
+  const val25 = parseFloat(r[k25]);
+
+  if (pais && !isNaN(val24) && !isNaN(val25)) {
+    dataGrafico.push({ pais: pais, anio: "2024", valor: val24 });
+    dataGrafico.push({ pais: pais, anio: "2025", valor: val25 });
+
+    const diff = val25 - val24;
+    const pct = val24 !== 0 ? (diff / val24) * 100 : 0;
+    
+    dataVariacion.push({ 
+      pais: pais, 
+      orden: val25,
+      pct: pct,
+      dummyX: "2024" // Referencia auxiliar
+    });
+  }
+});
+
+const orden = dataVariacion.sort((a,b) => b.orden - a.orden).map(d => d.pais);
+const maxTotal = dataGrafico.length > 0 ? d3.max(dataGrafico, d => d.valor) : 1000;
+
+// 2. Gráfico VERTICAL (Barras hacia arriba, Países en horizontal)
+function chartBarrasColumnas(data, textos, {width}) {
+  return Plot.plot({
+    width,
+    height: 240, // Altura fija
+    marginTop: 30, // Espacio arriba para las variaciones
+    marginBottom: 60, // Espacio abajo para nombres rotados
+    marginLeft: 40,
+    style: { background: "transparent", fontSize: "11px", fontFamily: "sans-serif" },
+    
+    // EJE Y: Ahora son los valores
+    y: { 
+      grid: true,
+      label: null,
+      tickFormat: (d) => d >= 1000 ? `${d/1000}k` : d // Formato corto si es grande
+    },
+    
+    // EJE X (Interno del grupo): 2024 vs 2025
+    x: { 
+      axis: null, 
+      domain: ["2024", "2025"], 
+      padding: 0.2 
+    },
+
+    // FACETAS HORIZONTALES (fx): Los países van en el eje X
+    fx: { 
+        domain: orden, 
+        axis: "bottom", 
+        label: null,
+        tickRotate: (typeof width !== 'undefined' && width < 600) ? -45 : 0, // Rotar nombres para que quepan en móvil
+        tickSize: 0,
+        padding: 0.15,
+        fontSize: (typeof width !== 'undefined' && width < 600) ? 9 : 11
+      },
+    
+    color: { 
+      domain: ["2024", "2025"], 
+      range: ["#673AB7", "#E91E63"],
+      legend: false 
+    },
+    
+    marks: [
+      // 1. COLUMNAS (barY)
+      Plot.barY(data, {
+        x: "anio",      // Separa las barras localmente
+        y: "valor",     // Altura
+        fx: "pais",     // Grupo (País)
+        fill: "anio",
+        // Título tooltip nativo simple
+        title: d => `${d.pais}\n${d.anio}: ${Math.round(d.valor)}`
+      }),
+
+      // 2. ETIQUETAS NUMÉRICAS (Encima de la barra)
+      Plot.text(data, {
+        x: "anio",
+        y: "valor",
+        fx: "pais",
+        text: d => Math.round(d.valor).toLocaleString("es-CO"),
+        fill: "#333", // Color oscuro para contraste si está afuera
+        dy: -6,       // Un poco más arriba de la barra
+        textAnchor: "middle",
+        fontWeight: "bold",
+        fontSize: 9
+      }),
+
+      // 3. PORCENTAJE DE VARIACIÓN (Arriba del todo de cada grupo)
+      Plot.text(textos, {
+        x: "dummyX", // Usamos una referencia centrada en el grupo (o aprox)
+        // Truco: Ponemos el texto en el valor máximo del gráfico para que queden alineados arriba
+        y: maxTotal * 1.05, 
+        fx: "pais",
+        text: d => (d.pct > 0 ? "+" : "") + d.pct.toFixed(1).replace(".", ",") + "%",
+        fill: d => d.pct >= 0 ? "#5f8b14" : "#d32f2f",
+        fontWeight: "bold",
+        fontSize: 10,
+        dy: -15, // Subir un poco más al marco superior
+        // Centrar visualmente entre las dos barras:
+        dx: 12 // Ajuste fino a la derecha para centrar en el grupo de 2 barras
+      })
+    ]
+  });
+}
+return {datosDestinosRaw,hojaDestinos,dataGrafico,dataVariacion,orden,maxTotal,chartBarrasColumnas};
+}});
+
+define({id: "45a28986", mode: "inline", inputs: ["resize","chartBarrasColumnas","dataGrafico","dataVariacion","display"], body: async (resize,chartBarrasColumnas,dataGrafico,dataVariacion,display) => {
+display(await(
+resize((width) => chartBarrasColumnas(dataGrafico, dataVariacion, {width}))
+))
+}});
+
+define({id: "aba77271", inputs: ["FileAttachment","d3","html","display"], outputs: ["datosCuadro","hojaCuadro","productosCol","rowTotal","granTotal"], body: async (FileAttachment,d3,html,display) => {
+// ...existing code...
+// --- CARGA DINÁMICA DEL CUADRO DE PRODUCTOS ---
+const datosCuadro = await FileAttachment("./CuadroValle.xlsx").xlsx();
+const hojaCuadro = datosCuadro.sheet(0, {headers: true});
+
+// 1. Procesamiento de datos (RESPETANDO ORDEN DEL EXCEL)
+const productosCol = hojaCuadro.map(row => {
+  const getVal = (keys) => {
+    const k = Object.keys(row).find(key => keys.some(x => key.trim().toLowerCase().includes(x.toLowerCase())));
+    return k ? row[k] : null;
+  };
+
+  const producto = getVal(["Grupo", "Producto", "Nombre"]);
+  const v2024 = parseFloat(getVal(["2024"]) || 0);
+  const v2025 = parseFloat(getVal(["2025"]) || 0);
+  
+  // Calculamos variaciones si no vienen
+  const vAbs = v2025 - v2024;
+  const vRel = v2024 !== 0 ? (vAbs / v2024) * 100 : 0;
+  
+  return { 
+    producto: producto, 
+    valor2024: v2024, 
+    valor2025: v2025, 
+    varAbs: vAbs, 
+    varRel: vRel,
+    part: 0 
+  };
+})
+.filter(d => d.producto && (d.valor2025 !== 0 || d.valor2024 !== 0)); // Solo quitamos filas vacías, NO REORDENAMOS
+
+// Detectar Total Nacional para calcular participación (buscando en los datos cargados)
+const rowTotal = productosCol.find(d => d.producto.toLowerCase().includes("total export") || d.producto.toLowerCase().includes("nacional"));
+const granTotal = rowTotal ? rowTotal.valor2025 : d3.sum(productosCol, d => d.valor2025);
+
+// Calcular participación real
+productosCol.forEach(p => p.part = (p.valor2025 / granTotal) * 100);
+
+// 3. Renderizado HTML
+{
+  const fmt = (n) => Math.round(n).toLocaleString('es-CO').replace(/,/g, '.');
+  const fmtDec = (n) => n.toFixed(1).replace('.', ',');
+
+  const filasHTML = productosCol.map((p, i) => {
+      const nombreMin = p.producto.toLowerCase();
+      // Estilos especiales según tipo de fila
+      const esTotalNacional = nombreMin.includes("total export") || nombreMin.includes("nacional") || nombreMin.includes("colombia");
+      const esTotal20 = nombreMin.includes("total 20") || nombreMin.includes("principales");
+      const esOtros = nombreMin.includes("otros");
+      const esResumen = esTotalNacional || esTotal20 || esOtros;
+
+      // Colores de fondo
+      let bg = ((i % 2 === 0) && !esResumen) ? '#ffffff' : '#f8f9fa';
+      if (esTotal20) bg = '#e3f2fd'; // Azul claro
+      if (esOtros) bg = '#ffffff';
+      if (esTotalNacional) bg = '#002b49'; // Azul oscuro
+
+      const colorTexto = esTotalNacional ? 'white' : (esTotal20 ? '#002b49' : (esOtros ? '#666' : '#333'));
+      const weight = (i < 5 && !esResumen) || esResumen ? 'bold' : 'normal'; // Top 5 y Totales en negrilla
+      
+      const colVar = p.varAbs >= 0 ? '#0FAA6D' : '#d32f2f'; // Verde o Rojo
+      const sign = p.varAbs >= 0 ? '+' : '';
+
+      return `
+        <tr style="background-color: ${bg}; height: ${esResumen ? '26px' : '21px'}; border-bottom: 1px solid #eaeaea; ${esTotalNacional ? 'border-top: 2px solid #002b49;' : ''}">
+          <td style="padding: 2px 6px; text-align: left; font-weight: ${weight}; color: ${colorTexto} !important; border-right: 1px solid rgba(0,0,0,0.05); ${esOtros ? 'font-style:italic;' : ''}">${p.producto}</td>
+          <td style="padding: 2px 6px; text-align: right; font-family: 'Consolas', monospace; font-weight: ${esResumen ? 'bold' : 'normal'}; color: ${colorTexto} !important; border-right: 1px solid rgba(0,0,0,0.05); font-size: 0.7rem;">${fmt(p.valor2024)}</td>
+          <td style="padding: 2px 6px; text-align: right; font-family: 'Consolas', monospace; font-weight: bold; color: ${colorTexto} !important; border-right: 1px solid rgba(0,0,0,0.05); font-size: 0.7rem;">${fmt(p.valor2025)}</td>
+          <td style="padding: 2px 6px; text-align: right; font-family: 'Consolas', monospace; color: ${esTotalNacional ? 'white' : colVar} !important; font-weight: bold; border-right: 1px solid rgba(0,0,0,0.05); font-size: 0.7rem;">${sign}${fmt(p.varAbs)}</td>
+          <td style="padding: 2px 6px; text-align: right; font-family: 'Consolas', monospace; color: ${esTotalNacional ? 'white' : colVar} !important; font-weight: bold; border-right: 1px solid rgba(0,0,0,0.05); font-size: 0.7rem;">${sign}${fmtDec(p.varRel)}</td>
+          <td style="padding: 2px 6px; text-align: right; font-family: 'Consolas', monospace; font-size: 0.7rem; color: ${colorTexto} !important;">${fmtDec(p.part)}</td>
+        </tr>`;
+  }).join("");
+
+  const container = html`
+  <div class="economist-chart-container" style="margin-top: 20px;">
+    <div class="economist-title">20 Principales Grupos de Productos Exportados por el Valle del Cauca (USD Miles)</div>
+    <div style="font-size: 0.7rem; color: #666; margin-bottom: 10px;">Enero-octubre (2025 Vs. 2024)</div>
+
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-family: -apple-system, sans-serif; font-size: 0.75rem; line-height: 1.0;">
+        <thead>
+          <tr style="background-color: #002b49; color: white !important; height: 28px;">
+            <th style="padding: 4px 6px; text-align: left; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">Grupo de productos</th>
+            <th style="padding: 4px 6px; text-align: center; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">2024</th>
+            <th style="padding: 4px 6px; text-align: center; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">2025</th>
+            <th style="padding: 4px 6px; text-align: center; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">Var. Abs</th>
+            <th style="padding: 4px 6px; text-align: center; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">Var. (%)</th>
+            <th style="padding: 4px 6px; text-align: center; font-weight: bold; color: white;">Part. (%)</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpo-tabla">
+           <!-- CAMBIO: Dejamos esto vacío para inyectar HTML luego -->
+        </tbody>
+      </table>
+    </div>
+    
+    <div style="margin-top: 10px; font-size: 0.65rem; color: #888; border-top: 1px solid #eee; padding-top: 8px;">
+      <strong>Fuente:</strong> DIAN, DANE - Cálculos Cámara de Comercio de Cali<br>
+      *Según clasificación 4 dígitos 
+    </div>
+  </div>`;
+  
+  // CAMBIO: Inyectamos el HTML aquí para que no se escape como texto
+  const tbody = container.querySelector("#cuerpo-tabla");
+  tbody.innerHTML = filasHTML; 
+  
+  display(container);
+}
+return {datosCuadro,hojaCuadro,productosCol,rowTotal,granTotal};
+}});
+
+define({id: "6cbc0473", inputs: ["FileAttachment","d3"], outputs: ["datosTortaRaw","hojaTorta","datosTorta","graficoTortaD3"], body: async (FileAttachment,d3) => {
+// 1. CARGA DE DATOS DESDE EXCEL
+const datosTortaRaw = await FileAttachment("./Graficotorta.xlsx").xlsx();
+const hojaTorta = datosTortaRaw.sheet(0, {headers: true});
+
+// 2. TRANSFORMACIÓN DE DATOS
+const datosTorta = hojaTorta.map(row => ({
+  depto: row["Departamento"], 
+  valor: parseFloat(row["Ventas"]) || 0
+})).filter(d => d.depto && d.valor > 0);
+
+// ...existing code...
+// 3. FUNCIÓN DE GRÁFICO DE TORTA USANDO D3 (Respeta saltos de línea del Excel)
+function graficoTortaD3(data, {width}) {
+  const height = Math.min(width, 260); // Un poco más alto para que queden bien los textos
+  const radius = Math.min(width, height) / 2;
+
+  // Colores
+  const getColor = (nombre) => {
+    const n = nombre.toLowerCase();
+    if (n.includes("valle")) return "#0f235a";
+    if (n.includes("otros")) return "#e0e0e0";
+    if (n.includes("santander")) return "#e89300";
+    if (n.includes("atlántico") || n.includes("atlantico")) return "#626262";
+    if (n.includes("antioquia")) return "#238d00";
+    if (n.includes("bogot")) return "#e4215f";
+    return "#ccc";
+  };
+
+  const getTextColor = (nombre) => (nombre.toLowerCase().includes("otros") || nombre.toLowerCase().includes("santander")) ? "#333" : "white";
+
+  const pie = d3.pie().sort(null).value(d => d.valor);
+  const arc = d3.arc().innerRadius(0).outerRadius(radius - 10);
+  const arcLabel = d3.arc().innerRadius(radius * 0.6).outerRadius(radius * 0.6);
+
+  const arcs = pie(data);
+
+  const svg = d3.create("svg")
+      .attr("viewBox", [-width / 2, -height / 2, width, height])
+      .attr("width", width)
+      .attr("height", height)
+      .style("font-family", "sans-serif")
+      .style("font-size", "11px");
+
+  // SECTORES
+  svg.selectAll("path")
+    .data(arcs)
+    .join("path")
+      .attr("fill", d => getColor(d.data.depto))
+      .attr("stroke", "white")
+      .attr("stroke-width", "2px")
+      .attr("d", arc)
+    .append("title")
+      .text(d => `${d.data.depto}: ${d.data.valor.toFixed(1).replace('.', ',')}%`);
+
+  // ETIQUETAS DE TEXTO (Lógica automática por líneas)
+  svg.append("g")
+      .attr("text-anchor", "middle")
+    .selectAll("text")
+    .data(arcs)
+    .join("text")
+      .attr("transform", d => `translate(${arcLabel.centroid(d)})`)
+      .each(function(d) {
+         if (d.data.valor <= 2) return; 
+
+         const el = d3.select(this);
+         const color = getTextColor(d.data.depto);
+         
+         // AQUÍ ESTÁ LA CLAVE: Dividimos el texto si detectamos saltos de línea (\n)
+         // Esto ocurre si en Excel usaste Alt+Enter
+         const lineas = d.data.depto.toString().split(/\r\n|\r|\n/);
+         
+         // Calculamos posición inicial para centrar verticalmente el bloque de texto
+         // (Depende de cuantas líneas de nombre tenga + 1 línea de porcentaje)
+         const totalLineas = lineas.length + 1; 
+         let dyInicial = -0.5 * (totalLineas - 1); 
+
+         // 1. Dibujar cada línea del nombre tal cual viene del Excel
+         lineas.forEach((linea, i) => {
+            el.append("tspan")
+              .attr("x", 0)
+              .attr("dy", i === 0 ? "0" : "1.1em") // Solo la primera no baja
+              .attr("y", i === 0 ? `${dyInicial}em` : null) // Ajuste vertical inicial
+              .attr("font-weight", "bold")
+              .attr("fill", color)
+              .text(linea); // Texto original
+         });
+
+         // 2. Dibujar el porcentaje debajo de la última línea del nombre
+         el.append("tspan")
+           .attr("x", 0)
+           .attr("dy", "1.1em")
+           .attr("fill", color)
+           .text(`${d.data.valor.toFixed(1).replace('.', ',')}%`);
+      });
+
+  return svg.node();
+}
+return {datosTortaRaw,hojaTorta,datosTorta,graficoTortaD3};
+}});
+
+define({id: "26ab2f08", mode: "inline", inputs: ["resize","graficoTortaD3","datosTorta","display"], body: async (resize,graficoTortaD3,datosTorta,display) => {
+display(await(
+resize((width) => graficoTortaD3(datosTorta, {width}))
+))
+}});
+
+define({id: "722d4374", inputs: ["FileAttachment","Plot","width"], outputs: ["datosHistRaw","hojaHist","data_fixed_v5","chart_fixed_v5"], body: async (FileAttachment,Plot,width) => {
+// ...existing code...
+
+// 1. CARGA DE DATOS DESDE EXCEL
+const datosHistRaw = await FileAttachment("./HistoricoManufacturas.xlsx").xlsx();
+const hojaHist = datosHistRaw.sheet(0, {headers: true});
+
+// Transformación de datos
+const data_fixed_v5 = hojaHist.map(row => ({
+  anio: parseInt(row.Anio), 
+  valor: parseFloat(row.Valor)
+})).sort((a, b) => a.anio - b.anio);
+
+// 2. GRÁFICO FINAL (Corrección definitiva de comas)
+const chart_fixed_v5 = Plot.plot({
+  width: width,
+  height: 240,
+  marginTop: 20,
+  marginBottom: 40,
+  style: { 
+    fontSize: "12px", 
+    fontFamily: "Segoe UI, sans-serif",
+    background: "white" 
+  },
+  x: { 
+    type: "linear",
+    domain: [2018.5, 2025.5],
+    ticks: data_fixed_v5.map(d => d.anio),
+    axis: null, // Ocultamos el eje por defecto para dibujarlo nosotros abajo
+    grid: false
+  },
+  y: { 
+    axis: null, 
+    domain: [0, 1600000] 
+  },
+  marks: [
+    // Fondo gris
+    Plot.ruleY([300000, 600000, 900000, 1200000], {stroke: "#f3f3f3", strokeWidth: 1}),
+    
+    // Barras
+    Plot.rectY(data_fixed_v5, {
+      x1: d => d.anio - 0.35, 
+      x2: d => d.anio + 0.35,
+      y: "valor",
+      fill: "#002b49",
+      title: d => `${d.anio}: ${d.valor}`
+    }),
+
+    // Etiquetas valor
+    Plot.text(data_fixed_v5, {
+      x: "anio",
+      y: "valor",
+      dy: 45, 
+      text: d => d.valor.toLocaleString("es-CO").replace(/,/g, "."),
+      fill: "white",
+      fontSize: 12,
+      textAnchor: "middle",      
+      dominantBaseline: "middle",
+      rotate: -90
+    }),
+
+    // --- EJE X FORZADO --- 
+    // Aquí es donde ocurría el error. Forzamos formato 'String' aquí mismo.
+    Plot.axisX({
+      tickFormat: String, // <--- ESTO QUITA LAS COMAS (garantizado)
+      ticks: data_fixed_v5.map(d => d.anio),
+      tickSize: 0,
+      fontSize: 13,
+      dy: 10,
+      color: "#333"
+    }),
+
+    // Llave Grande
+    Plot.link([{x1: 2019, x2: 2025, y: 1450000}], {
+      x1: "x1", y1: "y", x2: "x2", y2: "y", stroke: "#E3B505", strokeWidth: 1.5
+    }),
+    Plot.ruleX([2019, 2025], {
+      y1: 1438000, y2: 1450000, stroke: "#E3B505", strokeWidth: 1.5
+    }),
+    Plot.text([{x: 2022, y: 1510000, t: "39,7%"}], {
+      x: "x", y: "y", text: "t", fill: "#5f8b14", fontWeight: "bold", fontSize: 13
+    }),
+
+    // Llave Pequeña
+    Plot.link([{x1: 2024, x2: 2025, y: 1300000}], {
+      x1: "x1", y1: "y", x2: "x2", y2: "y", stroke: "#E3B505", strokeWidth: 1.5
+    }),
+    Plot.ruleX([2024, 2025], {
+      y1: 1288000, y2: 1300000, stroke: "#E3B505", strokeWidth: 1.5
+    }),
+    Plot.text([{x: 2024.5, y: 1360000, t: "9,7%"}], {
+      x: "x", y: "y", text: "t", fill: "#5f8b14", fontWeight: "bold", fontSize: 13
+    }),
+
+    // Línea Base
+    Plot.ruleY([0], {stroke: "#333", strokeWidth: 1.5})
+  ]
+});
+return {datosHistRaw,hojaHist,data_fixed_v5,chart_fixed_v5};
+}});
+
+define({id: "48c35098", mode: "inline", inputs: ["chart_fixed_v5","display"], body: async (chart_fixed_v5,display) => {
+display(await(
+chart_fixed_v5
+))
+}});
+
+define({id: "13dc4c2e", inputs: ["FileAttachment","d3","html","display"], outputs: ["datosCuadro","hojaCuadro","productosManu","rowTotal","granTotal"], body: async (FileAttachment,d3,html,display) => {
+// --- CARGA DINÁMICA DEL CUADRO DE PRODUCTOS ---
+const datosCuadro = await FileAttachment("./CuadroManufactura.xlsx").xlsx();
+const hojaCuadro = datosCuadro.sheet(0, {headers: true});
+
+// 1. Procesamiento de datos (RESPETANDO ORDEN DEL EXCEL)
+const productosManu = hojaCuadro.map(row => {
+  const getVal = (keys) => {
+    const k = Object.keys(row).find(key => keys.some(x => key.trim().toLowerCase().includes(x.toLowerCase())));
+    return k ? row[k] : null;
+  };
+
+  const producto = getVal(["Grupo", "Producto", "Nombre"]);
+  const v2024 = parseFloat(getVal(["2024"]) || 0);
+  const v2025 = parseFloat(getVal(["2025"]) || 0);
+  
+  // Calculamos variaciones si no vienen
+  const vAbs = v2025 - v2024;
+  const vRel = v2024 !== 0 ? (vAbs / v2024) * 100 : 0;
+  
+  return { 
+    producto: producto, 
+    valor2024: v2024, 
+    valor2025: v2025, 
+    varAbs: vAbs, 
+    varRel: vRel,
+    part: 0 
+  };
+})
+.filter(d => d.producto && (d.valor2025 !== 0 || d.valor2024 !== 0)); // Solo quitamos filas vacías, NO REORDENAMOS
+
+// Detectar Total Nacional para calcular participación (buscando en los datos cargados)
+const rowTotal = productosManu.find(d => d.producto.toLowerCase().includes("total export") || d.producto.toLowerCase().includes("nacional"));
+const granTotal = rowTotal ? rowTotal.valor2025 : d3.sum(productosManu, d => d.valor2025);
+
+// Calcular participación real
+productosManu.forEach(p => p.part = (p.valor2025 / granTotal) * 100);
+
+// 3. Renderizado HTML
+{
+  const fmt = (n) => Math.round(n).toLocaleString('es-CO').replace(/,/g, '.');
+  const fmtDec = (n) => n.toFixed(1).replace('.', ',');
+
+  const filasHTML = productosManu.map((p, i) => {
+      const nombreMin = p.producto.toLowerCase();
+      // Estilos especiales según tipo de fila
+      const esTotalNacional = nombreMin.includes("total export") || nombreMin.includes("nacional") || nombreMin.includes("colombia");
+      const esTotal20 = nombreMin.includes("total 20") || nombreMin.includes("principales");
+      const esOtros = nombreMin.includes("otros");
+      const esResumen = esTotalNacional || esTotal20 || esOtros;
+
+      // Colores de fondo
+      let bg = ((i % 2 === 0) && !esResumen) ? '#ffffff' : '#f8f9fa';
+      if (esTotal20) bg = '#e3f2fd'; // Azul claro
+      if (esOtros) bg = '#ffffff';
+      if (esTotalNacional) bg = '#002b49'; // Azul oscuro
+
+      const colorTexto = esTotalNacional ? 'white' : (esTotal20 ? '#002b49' : (esOtros ? '#666' : '#333'));
+      const weight = (i < 5 && !esResumen) || esResumen ? 'bold' : 'normal'; // Top 5 y Totales en negrilla
+      
+      const colVar = p.varAbs >= 0 ? '#0FAA6D' : '#d32f2f'; // Verde o Rojo
+      const sign = p.varAbs >= 0 ? '+' : '';
+
+      return `
+        <tr style="background-color: ${bg}; height: ${esResumen ? '26px' : '21px'}; border-bottom: 1px solid #eaeaea; ${esTotalNacional ? 'border-top: 2px solid #002b49;' : ''}">
+          <td style="padding: 2px 6px; text-align: left; font-weight: ${weight}; color: ${colorTexto} !important; border-right: 1px solid rgba(0,0,0,0.05); ${esOtros ? 'font-style:italic;' : ''}">${p.producto}</td>
+          <td style="padding: 2px 6px; text-align: right; font-family: 'Consolas', monospace; font-weight: ${esResumen ? 'bold' : 'normal'}; color: ${colorTexto} !important; border-right: 1px solid rgba(0,0,0,0.05); font-size: 0.7rem;">${fmt(p.valor2024)}</td>
+          <td style="padding: 2px 6px; text-align: right; font-family: 'Consolas', monospace; font-weight: bold; color: ${colorTexto} !important; border-right: 1px solid rgba(0,0,0,0.05); font-size: 0.7rem;">${fmt(p.valor2025)}</td>
+          <td style="padding: 2px 6px; text-align: right; font-family: 'Consolas', monospace; color: ${esTotalNacional ? 'white' : colVar} !important; font-weight: bold; border-right: 1px solid rgba(0,0,0,0.05); font-size: 0.7rem;">${sign}${fmt(p.varAbs)}</td>
+          <td style="padding: 2px 6px; text-align: right; font-family: 'Consolas', monospace; color: ${esTotalNacional ? 'white' : colVar} !important; font-weight: bold; border-right: 1px solid rgba(0,0,0,0.05); font-size: 0.7rem;">${sign}${fmtDec(p.varRel)}</td>
+          <td style="padding: 2px 6px; text-align: right; font-family: 'Consolas', monospace; font-size: 0.7rem; color: ${colorTexto} !important;">${fmtDec(p.part)}</td>
+        </tr>`;
+  }).join("");
+
+  const container = html`
+  <div class="economist-chart-container" style="margin-top: 20px;">
+    <div class="economist-title">10 Principales GRUPOS DE Productos Manufactureros Exportados por el Valle del Cauca (USD Miles)</div>
+    <div style="font-size: 0.7rem; color: #666; margin-bottom: 10px;">Enero-octubre (2025 Vs. 2024)</div>
+
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-family: -apple-system, sans-serif; font-size: 0.75rem; line-height: 1.0;">
+        <thead>
+          <tr style="background-color: #002b49; color: white !important; height: 28px;">
+            <th style="padding: 4px 6px; text-align: left; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">Grupo de productos</th>
+            <th style="padding: 4px 6px; text-align: center; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">2024</th>
+            <th style="padding: 4px 6px; text-align: center; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">2025</th>
+            <th style="padding: 4px 6px; text-align: center; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">Var. Abs</th>
+            <th style="padding: 4px 6px; text-align: center; font-weight: bold; color: white; border-right: 1px solid rgba(255,255,255,0.2);">Var. (%)</th>
+            <th style="padding: 4px 6px; text-align: center; font-weight: bold; color: white;">Part. (%)</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpo-tabla">
+           <!-- CAMBIO: Dejamos esto vacío para inyectar HTML luego -->
+        </tbody>
+      </table>
+    </div>
+    
+    <div style="margin-top: 10px; font-size: 0.65rem; color: #888; border-top: 1px solid #eee; padding-top: 8px;">
+      <strong>Fuente:</strong> DIAN, DANE - Cálculos Cámara de Comercio de Cali<br>
+      *Según clasificación 4 dígitos 
+    </div>
+  </div>`;
+  
+  // CAMBIO: Inyectamos el HTML aquí para que no se escape como texto
+  const tbody = container.querySelector("#cuerpo-tabla");
+  tbody.innerHTML = filasHTML; 
+  
+  display(container);
+}
+return {datosCuadro,hojaCuadro,productosManu,rowTotal,granTotal};
+}});
+
+define({id: "978746ab", inputs: ["FileAttachment","d3"], outputs: ["datosDestinosRaw","hojaDestinosPie","datosDestinosPie","graficoTortaDestinos"], body: async (FileAttachment,d3) => {
+// 1. CARGA DE DATOS DESDE EXCEL (Destinos)
+const datosDestinosRaw = await FileAttachment("./GraficotortaDestinos.xlsx").xlsx();
+const hojaDestinosPie = datosDestinosRaw.sheet(0, {headers: true});
+
+// 2. TRANSFORMACIÓN DE DATOS (Busca columnas típicas de nombre)
+const datosDestinosPie = hojaDestinosPie.map(row => ({
+  // Intenta encontrar el nombre en varias posibles cabeceras
+  nombre: row["Pais"] || row["Destino"] || row["Departamento"] || row["Nombre"], 
+  valor: parseFloat(row["Ventas"] || row["Valor"] || row["Participacion"]) || 0
+})).filter(d => d.nombre && d.valor > 0);
+
+// ...existing code...
+
+// 3. FUNCIÓN MEJORADA (VERSIÓN AGRESIVA PARA ETIQUETAS)
+function graficoTortaDestinos(data, {width}) {
+  const height = Math.min(width, 300); 
+  // Reducimos el radio para que quepan las líneas y textos afuera
+  const radius = Math.min(width, height) / 3; 
+
+  const pie = d3.pie().sort(null).value(d => d.valor);
+  const arc = d3.arc().innerRadius(0).outerRadius(radius);
+  const arcLabelOutside = d3.arc().innerRadius(radius * 1.3).outerRadius(radius * 1.3);
+
+  const arcs = pie(data);
+
+  // Mismos colores
+  const getColor = (texto) => {
+    const n = texto.toLowerCase();
+    if (n.includes("estados unidos") || n.includes("ee.uu") || n.includes("usa")) return "#0f235a";
+    if (n.includes("ecuador")) return "#00AED9"; 
+    if (n.includes("perú") || n.includes("peru")) return "#5f8b14"; 
+    if (n.includes("chile")) return "#C05805"; 
+    if (n.includes("méxico") || n.includes("mexico")) return "#7B1FA2"; 
+    if (n.includes("brasil")) return "#FFC107"; 
+    if (n.includes("otros")) return "#e0e0e0"; 
+    return "#626262"; 
+  };
+
+  const svg = d3.create("svg")
+      .attr("viewBox", [-width / 2, -height / 2, width, height])
+      .attr("width", width)
+      .attr("height", height)
+      .style("font-family", "Segoe UI, sans-serif")
+      .style("font-size", "11px");
+
+  // 1. DIBUJAR SECTORES
+  svg.selectAll("path")
+    .data(arcs)
+    .join("path")
+      .attr("fill", d => getColor(d.data.nombre))
+      .attr("stroke", "white")
+      .attr("stroke-width", "2px")
+      .attr("d", arc);
+
+  // 2. ETIQUETAS
+  // Forzamos "Afuera" si el valor es menor al 15% o si es España/El Salvador
+  const isLabelOutside = (d) => {
+      const n = d.data.nombre.toLowerCase();
+      // Si es "Otros", siempre adentro (suele ser grande)
+      if (n.includes("otros")) return false;
+      // Si es menor a 12% pa' fuera
+      return d.data.valor < 12; 
+  };
+
+  const labels = svg.append("g");
+  const lines = svg.append("g");
+
+  arcs.forEach(d => {
+    // Si excluimos etiquetas muy, muy pequeñas (< 2%)
+    if (d.data.valor < 2) return;
+
+    if (isLabelOutside(d)) {
+       // --- ETIQUETA AFUERA CON LÍNEA ---
+       const posA = arc.centroid(d); // Centro del slice
+       const posB = arcLabelOutside.centroid(d); // Punto intermedio afuera
+       const posC = [...posB]; // Copia para punto final
+       
+       // Decidir si va a la izquierda o derecha
+       const midAngle = d.startAngle + (d.endAngle - d.startAngle) / 2;
+       posC[0] = radius * 1.5 * (midAngle < Math.PI ? 1 : -1); 
+
+       // Línea conectora
+       lines.append("polyline")
+            .attr("points", [posA, posB, posC])
+            .attr("fill", "none")
+            .attr("stroke", "#999")
+            .attr("stroke-width", 1);
+       
+       // Texto
+       const g = labels.append("g")
+            .attr("transform", `translate(${posC})`);
+
+       g.append("text")
+        .text(d.data.nombre)
+        .attr("dy", "-0.2em")
+        .attr("text-anchor", midAngle < Math.PI ? "start" : "end")
+        .attr("dx", midAngle < Math.PI ? "5px" : "-5px")
+        .attr("font-weight", "bold")
+        .attr("fill", "#333");
+
+       g.append("text")
+        .text(`${d.data.valor.toFixed(1).replace('.', ',')}%`)
+        .attr("dy", "0.9em")
+        .attr("text-anchor", midAngle < Math.PI ? "start" : "end")
+        .attr("dx", midAngle < Math.PI ? "5px" : "-5px")
+        .attr("fill", "#666");
+
+    } else {
+       // --- ETIQUETA ADENTRO ---
+       // Calculamos centroide
+       const centroid = arc.centroid(d);
+       
+       const g = labels.append("g")
+           .attr("transform", `translate(${centroid})`)
+           .attr("text-anchor", "middle");
+
+       // Color texto (negro para 'otros', blanco para los demás)
+       const textColor = d.data.nombre.toLowerCase().includes("otros") ? "#333" : "white";
+
+       g.append("text")
+        .text(d.data.nombre)
+        .attr("dy", "-0.2em")
+        .attr("font-weight", "bold")
+        .attr("fill", textColor);
+
+       g.append("text")
+        .text(`${d.data.valor.toFixed(1).replace('.', ',')}%`)
+        .attr("dy", "0.9em")
+        .attr("fill", textColor);
+    }
+  });
+
+  return svg.node();
+}
+return {datosDestinosRaw,hojaDestinosPie,datosDestinosPie,graficoTortaDestinos};
+}});
+
+define({id: "6069df17", mode: "inline", inputs: ["resize","graficoTortaDestinos","datosDestinosPie","display"], body: async (resize,graficoTortaDestinos,datosDestinosPie,display) => {
+display(await(
+resize((width) => graficoTortaDestinos(datosDestinosPie, {width}))
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link observablehq-link-active"><a href="./">Informe Interactivo de Exportaciones</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#contexto-nacional">Contexto Nacional</a></li>
+<li class="observablehq-secondary-link"><a href="#balance-regional-valle-del-cauca">Balance Regional (Valle del Cauca)</a></li>
+<li class="observablehq-secondary-link"><a href="#analisis-sectorial-destacado-valle-del-cauca">Análisis Sectorial Destacado (Valle del Cauca)</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<style>
+  :root {
+    --corporate-blue: #002b49;
+    --corporate-orange: #5f8b14;
+    --trend-green: #0FAA6D;
+    --text-main: #333333;
+    --text-muted: #666666;
+    
+    /* COLORES */
+    --page-bg: #ffffff;       
+    --card-bg: #ffffff;       
+    
+    /* Variables del Framework */
+    --theme-background: var(--page-bg) !important; 
+    --sidebar-background: #ffffff !important; 
+    --sidebar-border: #eaeaea;
+  }
+
+  /* --- FORZAR SIDEBAR FIJO --- */
+  /* 1. Ocultar el mecanismo de checkbox que controla el estado */
+  input#observablehq-sidebar-toggle {
+    display: none !important;
+  }
+  
+  /* 2. Ocultar el icono/botón visual (la flecha) para que nadie pueda darle click */
+  label[for="observablehq-sidebar-toggle"] {
+    display: none !important;
+  }
+
+  /* 3. Asegurar que el sidebar se muestre siempre (sobreescribiendo cualquier estado oculto) */
+  @media (min-width: 600px) {
+    #observablehq-sidebar {
+      display: flex !important;
+      visibility: visible !important;
+      transform: none !important; /* Evita que se mueva fuera de pantalla */
+      z-index: 100 !important;
+
+      /* CAMBIO 1: REDUCIR EL ANCHO DE LA BARRA LATERAL */
+      min-width: 200px !important;  /* Antes era 280px aprox */
+      max-width: 210px !important;
+      width: 220px !important;
+      
+      /* CAMBIO 2: LÍNEA GRIS MÁS DELGADA Y CLARA */
+      border-right: 1px solid #f0f0f0 !important; /* Más suave que el gris por defecto */
+    }
+  }
+
+  /* CUERPO PRINCIPAL */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    background-color: var(--page-bg) !important;
+    font-size: 11px !important;
+    color: var(--text-main);
+
+    /* Ancho máximo para mantener el contenido centrado y legible */
+    max-width: 850px !important; 
+    margin: 0 auto !important;    
+    padding: 20px 40px !important; 
+  }
+
+  /* SOBREESCRIBIR ANCHO DE OBSERVABLE FRAMEWORK */
+  #observablehq-main {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  #observablehq-center {
+    max-width: 1000px !important;
+    padding: 0 70px !important;
+    margin: 0 auto !important;
+  }
+
+  .observablehq {
+    max-width: none !important;
+  }
+
+  main {
+    max-width: 1300px !important;
+    margin: 0 auto !important;
+  }
+
+
+  /* --- TIPOGRAFÍA --- */
+  h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", Times, serif !important;
+    letter-spacing: -0.5px !important;
+  }
+
+  h1 {
+    font-size: 1.8rem !important; 
+    color: var(--corporate-blue) !important;
+    margin-bottom: 0.5rem !important;
+    margin-top: 1rem !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+  }
+  
+  h2 {
+    font-size: 1rem !important;
+    border-bottom: 2px solid #e0e0e0 !important; 
+    padding-bottom: 5px !important;
+    margin: 2rem 0 1rem 0 !important;
+    color: var(--corporate-blue) !important;
+    font-weight: 700 !important;
+  }
+
+  h3 {
+    font-size: 1rem !important;
+    padding-bottom: 2px !important;
+    margin: 0 rem !important;
+    color: var(--corporate-blue) !important;
+    font-weight: 700 !important;
+  }
+
+  /* --- COMPONENTES UI --- */
+  .meta-header {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-family: sans-serif;
+  }
+  .meta-tag {
+    background-color: var(--corporate-blue);
+    color: white;
+    padding: 2px 7px;
+    font-weight: 600;
+    font-size: 0.65rem;
+    border-radius: 2px;
+    margin-right: 6px;
+    text-transform: uppercase;
+  }
+
+    /* NUEVA CLASE PARA LA FECHA */
+  .period-highlight {
+    font-family: Georgia, serif;
+    font-size: 1.3rem; 
+    color: var(--corporate-orange); /* Color llamativo */
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0.2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    display: block;
+  }
+
+  /* Caja destacada MEJORADA (Tipo Resumen Ejecutivo) */
+  .lead-box {
+    /* Fondo sutil para separarlo del papel blanco */
+    background-color: #f4f7f6; 
+    
+    /* Borde verde más grueso y definido */
+    border-left: 6px solid var(--corporate-orange);
+    
+    /* Más espacio interno para que "respire" */
+    padding: 1.0rem 2rem;
+    
+    /* Tipografía más grande que el cuerpo del texto */
+    font-size: 1.0rem; 
+    line-height: 1.5;
+    
+    /* Color Azul Corporativo Oscuro para denotar importancia */
+    color: var(--corporate-blue); 
+    
+    font-family: Georgia, serif;
+    font-style: italic;
+    
+    /* Pequeña sombra y borde redondeado a la derecha */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04); 
+    border-radius: 0 8px 8px 0;
+    
+    margin-bottom: 2.5rem;
+  }
+
+/* ...existing code... */
+
+  /* --- ESTILO TARJETAS --- */
+  /* KPIs: 4 columnas en escritorio, 2x2 en móvil */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .kpi-card {
+    background-color: #ffffff; 
+    border: 1px solid #dfe3e8; 
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  }
+
+  .kpi-label {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: #888;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+  }
+  .kpi-number {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--corporate-blue);
+    line-height: 1.1;
+  }
+  .kpi-number.trend { color: var(--trend-green); }
+  .kpi-sub {
+    font-size: 0.65rem;
+    color: #888;
+    margin-top: 2px;
+  }
+
+  /* --- ESTILOS GRÁFICO --- */
+  .economist-chart-container {
+    background: #ffffff; 
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #dfe3e8;
+    margin-top: 15px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  }
+  
+  .economist-title {
+    font-family: Georgia, serif;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important; 
+    color: #000;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    text-transform: uppercase; 
+  }
+
+</style>
+<style>
+/* Mapa más grande en móvil: más alto y menos margen */
+@media (max-width: 900px) {
+  #map-target {
+    height: 270px !important;
+    min-height: 200px !important;
+    max-width: 100vw !important;
+    border-radius: 10px !important;
+    width: 100% !important;
+  }
+  .map-col {
+    margin-top: 4px !important;
+  }
+}
+</style>
+<style>
+/* SOLO PARA MÓVIL: KPIs 2x2 y más angostos al lado del mapa en sección regional */
+@media (max-width: 900px) {
+  /* KPIs en grid 2x2 en móvil */
+  .kpi-col {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+  .kpi-card {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: 0.95em !important;
+    padding: 7px !important;
+    min-height: 55px !important;
+    box-sizing: border-box !important;
+  }
+  /* El mapa ocupa todo el ancho debajo en móvil */
+  .map-col {
+    grid-column: 1 / span 2 !important;
+    margin-top: 12px !important;
+  }
+  .kpi-map-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+}
+</style>
+<style>
+/* Ajuste de KPIs y mapa para móvil: KPIs más angostas, mapa más grande */
+@media (max-width: 900px) {
+  .kpi-grid {
+    max-width: 340px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .kpi-card {
+    min-width: 0 !important;
+    max-width: 160px !important;
+    margin: 0 auto;
+  }
+  .kpi-map-grid {
+    grid-template-columns: 1fr 1.5fr !important;
+    gap: 10px !important;
+  }
+  .map-container, #map-target {
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+</style>
+<style>
+/* --- estilos responsivos móviles mejorados --- */
+@media (max-width: 900px) {
+  body { padding: 12px; max-width: 100%; }
+  #observablehq-sidebar { display: none; }
+  main { padding: 12px; }
+  .kpi-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px; }
+  .kpi-card { font-size: 0.95em !important; padding: 7px !important; }
+  .kpi-number { font-size: 1.1rem !important; }
+  img, svg, canvas, iframe { max-width: 100%; height: auto; }
+  svg[width], canvas[width] { width: 100% !important; height: auto !important; }
+}
+
+@media (max-width: 900px) {
+  .kpi-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+  .header-title, h1 { font-size: 1.1rem !important; margin-bottom: 0 !important; }
+  .header-flex {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0 !important;
+  }
+  .logo-ccc {
+    height: 40px !important;
+    margin-left: auto !important;
+    display: block !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .kpi-card { font-size: 0.8em !important; }
+  body, main, #observablehq-center {
+    padding: 4px !important;
+    max-width: 100vw !important;
+  }
+}
+
+@media (max-width: 420px) {
+  h1 { font-size: 1.1rem !important; }
+  .kpi-number { font-size: 1rem !important; }
+}
+</style>
+<div class="header-flex" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
+  <!-- COLUMNA IZQUIERDA: Títulos y Fecha -->
+  <div>
+    <h1 class="header-title">Ritmo Exportador</h1>
+    <div class="meta-header">
+      <span class="meta-tag">Informe Económico</span>
+    </div>
+    <div class="period-highlight">
+      Enero – Octubre 2025
+    </div>
+  </div>
+  <!-- COLUMNA DERECHA: Imagen alineada -->
+  <img class="logo-ccc" src="./_file/Logo-CCC-2.3a688f8d.jpg" style="height: 75px; width: auto; mix-blend-mode: multiply;" alt="Cámara de Comercio de Cali">
+</div>
+<div class="lead-box">
+  "Entre enero y octubre de 2025, las exportaciones del Valle del Cauca presentaron un desempeño sobresaliente, consolidando a la región como uno de los motores comerciales mas dinámicos del país."
+</div>
+<!-- ============================================== -->
+<!-- SECCIÓN 1: CONTEXTO NACIONAL                   -->
+<!-- ============================================== -->
+<h2 id="contexto-nacional" tabindex="-1"><a class="observablehq-header-anchor" href="#contexto-nacional">Contexto Nacional</a></h2>
+<div style="
+  text-align: justify;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 1.5rem;
+">
+  Entre enero y octubre de 2025, las exportaciones de Colombia alcanzaron <b>USD 40.950 millones</b>, 
+  creciendo un <b>1,7%</b> anual. Si se excluye el petróleo y sus derivados, el crecimiento fue notablemente superior, situándose en <b>9,8%</b>, 
+  un comportamiento impulsado principalmente por el dinamismo en los bienes no tradicionales (NME).
+</div>
+<!-- Grid de KPIs (Estilo Tarjetas) -->
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-label">Total Nacional</div>
+    <div class="kpi-number trend">+15,7%</div>
+    <div class="kpi-sub">Valor USD FOB</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Total Volumen</div>
+    <div class="kpi-number trend">+11,5%</div>
+    <div class="kpi-sub">Toneladas métricas</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Valor NME</div>
+    <div class="kpi-number">128</div>
+    <div class="kpi-sub">No Minero Energético</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Volumen NME</div>
+    <div class="kpi-number">1.257</div>
+    <div class="kpi-sub">No Minero Energético</div>
+  </div>
+</div>
+<div class="observablehq observablehq--block"><!--:81aa8f67:--></div>
+<div class="economist-chart-container">
+  <div class="economist-title">Evolución Exportadora (USD Millones FOB)</div>
+  <observablehq-loading></observablehq-loading><!--:1748ae13:-->
+  <div style="margin-top:5px; font-size:0.7rem; color:#888; text-align:right; border-top:1px solid #eee; padding-top:4px;">
+    Fuente: DANE - Cálculos Cámara de Comercio de Cali
+  </div>
+</div>
+ 
+<br>
+<h3 id="principales-grupos-de-productos-de-exportacion-nacional" tabindex="-1"><a class="observablehq-header-anchor" href="#principales-grupos-de-productos-de-exportacion-nacional">Principales grupos de productos de exportación nacional</a></h3>
+<br> 
+<!-- TEXTO MEJORADO ESTILO THE ECONOMIST -->
+<div style="
+  text-align: justify;          
+  font-family: Georgia, serif;  
+  font-size: 1rem;              
+  line-height: 1.6;             
+  color: #111;                  
+  margin-bottom: 2rem;
+">
+  Los veinte principales grupos de productos de
+  exportación en Colombia representaron el <b>96,0%</b> del
+  total exportado por el país entre enero y octubre de 2025, registrando un incremento anual de <b>1,6%</b> (Cuadro 1). El grupo de <i>café, té y especias</i> fue el de mayor dinamismo, en términos absolutos, con un aumento de USD 2.088 millones, impulsado principalmente por el crecimiento tanto en volumen como en valor de las exportaciones de café. <br> <br> En contraste, el grupo de combustibes registró la mayor contracción, debido a la caída de las ventas externas de hulla, coque y briquetas y petróleo, productos derivados del petróleo y productos conexos que contribuyeron, en conjunto, con 19,6 puntos porcentuales negativos a la variación del grupo.
+</div>
+<div class="observablehq observablehq--block"><!--:102516be:--></div>
+<h3 id="variacion-mensual" tabindex="-1"><a class="observablehq-header-anchor" href="#variacion-mensual">Variación mensual</a></h3>
+<!-- TEXTO MEJORADO ESTILO THE ECONOMIST -->
+<div style="
+  text-align: justify;          /* El secreto para los bordes parejos */
+  font-family: Georgia, serif;  /* Tipografía clásica de periódico */
+  font-size: 1rem;              /* Un poco más grande para leerse bien */
+  line-height: 1.6;             /* Aire entre líneas para que no se vea denso */
+  color: #111;                  /* Negro casi puro para contraste */
+  margin-bottom: 2rem;
+">
+  En el registro correspondiente al mes de octubre de
+2025, las ventas externas sin minería, petróleo y sus
+derivados de Colombia se incrementaron <b>15,2%</b> frente al mismo mes del año anterior. <br> <br>
+Por su parte, Valle del Cauca presentó un crecimiento
+anual del <b>5,6%</b>  en este mismo segmento, manteniendo una dinámica positiva, aunque con variaciones pronunciadas.
+</div>
+<div class="observablehq observablehq--block"><!--:3b8f0643:--></div>
+<div class="observablehq observablehq--block"><!--:810abf78:--></div>
+<div class="observablehq observablehq--block"><!--:7c2b8236:--></div>
+<div class="economist-chart-container" style="margin-top: 2.5rem;"> <div class="economist-title" style="text-align:center; font-size: 0.85rem !important; margin-bottom: 15px; line-height: 1.3;"> Variación anual de las exportaciones sin minería, petróleo y sus derivados de Colombia y Valle del Cauca (%) </div>
+  <div style="text-align: center; font-size: 0.8rem; color: #666; margin-bottom: 5px;">
+    Enero - Octubre (2024 - 2025)
+  </div>
+<p><observablehq-loading></observablehq-loading><!--:002f9571:--></p>
+<div style="display: flex; justify-content: center; gap: 25px; margin-top: 10px; font-family: sans-serif; font-size: 0.75rem; font-weight: bold;"> <div style="display: flex; align-items: center; gap: 8px;"> <div style="width: 30px; height: 4px; background: #00AED9; border-radius: 2px;"></div> <span>Colombia</span> </div> <div style="display: flex; align-items: center; gap: 8px;"> <div style="width: 30px; height: 4px; background: #002b49; border-radius: 2px;"></div> <span>Valle del Cauca</span> </div> </div> <div style="margin-top: 12px; font-size: 0.65rem; color: #888; border-top: 1px solid #eee; padding-top: 8px;"> <strong>Fuente:</strong> DANE - Cálculos Cámara de Comercio de Cali </div>
+</div> 
+<!-- ============================================== -->
+<!-- SECCIÓN 2: BALANCE REGIONAL                    -->
+<!-- ============================================== -->
+<h2 id="balance-regional-valle-del-cauca" tabindex="-1"><a class="observablehq-header-anchor" href="#balance-regional-valle-del-cauca">Balance Regional (Valle del Cauca)</a></h2>
+<!-- TEXTO MEJORADO ESTILO THE ECONOMIST -->
+<div style="
+  text-align: justify;          /* El secreto para los bordes parejos */
+  font-family: Georgia, serif;  /* Tipografía clásica de periódico */
+  font-size: 1rem;              /* Un poco más grande para leerse bien */
+  line-height: 1.6;             /* Aire entre líneas para que no se vea denso */
+  color: #111;                  /* Negro casi puro para contraste */
+  margin-bottom: 2rem;
+">
+  Los principales departamentos del país registraron
+crecimientos en el valor de sus exportaciones en lo
+corrido de 2025 a octubre.
+<br> <br>
+El Valle del Cauca registró el segundo mayor crecimiento <b>(15,7%)</b> en el valor de sus exportaciones, al pasar de <b>USD 1.961</b> millones en enero-octubre de 2024 a <b>USD 2.269</b> millones en el mismo periodo de 2025. Lo anterior indica que la región está logrando una mayor consolidación progresiva de sus sectores productivos,
+fortaleciendo su competitividad en los mercados
+internacionales.
+</div>
+<!-- GRID 2 COLUMNAS -->
+<div style="display: grid; grid-template-columns: 200px 1fr; gap: 15px; align-items: stretch; margin-top: 20px;">
+<!-- COLUMNA 1: KPIs IZQUIERDA (Altura completa) -->
+<div style="display: flex; flex-direction: column; gap: 8px; justify-content: space-between;">
+<div class="kpi-card">
+<div class="kpi-label">Valor Exportado</div>
+<div class="kpi-number trend">+15,7%</div>
+<div class="kpi-sub">USD FOB vs 2024</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Volumen</div>
+<div class="kpi-number trend">+11,5%</div>
+<div class="kpi-sub">Toneladas métricas</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Mercados</div>
+<div class="kpi-number">128</div>
+<div class="kpi-sub">Países destino</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Oferta</div>
+<div class="kpi-number">1.257</div>
+<div class="kpi-sub">Subpartidas</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Empresas</div>
+<div class="kpi-number">1.257</div>
+<div class="kpi-sub">Exportadoras</div>
+</div>
+</div>
+<!-- COLUMNA 2: MAPA -->
+<div>
+  <!-- CAMBIO: Agregado text-align: center -->
+  <div class="economist-title" style="margin-bottom: 8px; text-align: center;"> 
+    VARIACIÓN ABSOLUTA DEL VALOR EXPORTADO (USD MILES)
+  </div>
+  <div id="map-target" style="height: 380px; width: 100%; position: relative;"></div>
+  <div style="font-size: 0.65rem; color: #999; margin-top: 4px; text-align: right;">Georreferenciación por valor FOB</div>
+</div>
+<!-- SCRIPTS DEL MAPA -->
+<div class="observablehq observablehq--block"><!--:41ca87c8:--></div>
+</div>
+<h3 id="principales-paises-destino-de-las-exportaciones-del-valle" tabindex="-1"><a class="observablehq-header-anchor" href="#principales-paises-destino-de-las-exportaciones-del-valle">Principales países destino de las Exportaciones del Valle</a></h3>
+<br>
+<!-- TEXTO MEJORADO ESTILO THE ECONOMIST -->
+<div style="
+  text-align: justify;          /* El secreto para los bordes parejos */
+  font-family: Georgia, serif;  /* Tipografía clásica de periódico */
+  font-size: 1rem;              /* Un poco más grande para leerse bien */
+  line-height: 1.6;             /* Aire entre líneas para que no se vea denso */
+  color: #111;                  /* Negro casi puro para contraste */
+  margin-bottom: 2rem;
+">
+  Siete de los diez principales destinos hacia donde
+exportaron las empresas del Valle del Cauca entre enero y octubre de 2025 registraron variaciones positivas. <br> <br>
+EE.UU. continúa presentando la mayor expansión
+absoluta anual (+USD 114 millones) (Gráfico 5).
+Por su parte, las ventas externas del Valle del Cauca hacia México, Chile y China registraron disminuciones del 0,7%, 5,1% y 8,4% respectivamente; atribuible, principalmente, a menores ventas externas de hilos, cables y conductores aislados para electricidad, azúcar y
+aguacates.
+<br>
+</div>
+<div class="observablehq observablehq--block"><!--:250fe250:--></div>
+<!-- RENDERIZADO EN HTML -->
+<div class="economist-chart-container">
+  <div class="economist-title" style="text-align: center; color: #002b49;">
+    Valor de las exportaciones totales del Valle del Cauca - Principales destinos (USD Millones*)
+  </div>
+  <div style="text-align: center; font-size: 0.8rem; color: #666; margin-bottom: 5px;">
+    Enero - Octubre (2024 - 2025)
+  </div>
+<p><observablehq-loading></observablehq-loading><!--:45a28986:--></p>
+  <!-- LEYENDA -->
+  <div style="display: flex; justify-content: center; gap: 20px; margin-top: 5px;">
+    <div style="display: flex; align-items: center; gap: 5px; font-size: 0.75rem;">
+      <div style="width: 12px; height: 12px; background-color: #673AB7; border-radius:2px;"></div> 
+      <strong>2024</strong>
+    </div>
+    <div style="display: flex; align-items: center; gap: 5px; font-size: 0.75rem;">
+      <div style="width: 12px; height: 12px; background-color: #E91E63; border-radius:2px;"></div> 
+      <strong>2025</strong>
+    </div>
+  </div>
+  <div style="margin-top: 10px; font-size: 0.65rem; color: #888; border-top: 1px solid #eee; padding-top: 8px;">
+      <strong>Fuente:</strong> DIAN, DANE - Cálculos Cámara de Comercio de Cali<br>
+      *Por efecto del redondeo en millones, los totales pueden diferir ligeramente.
+  </div>
+</div>
+<br>
+<h3 id="principales-productos-exportados-desde-el-valle-del-cauca" tabindex="-1"><a class="observablehq-header-anchor" href="#principales-productos-exportados-desde-el-valle-del-cauca">Principales productos exportados desde el Valle del Cauca</a></h3>
+<!-- TEXTO MEJORADO ESTILO THE ECONOMIST -->
+<div style="
+  text-align: justify;          
+  font-family: Georgia, serif;  
+  font-size: 1rem;              
+  line-height: 1.6;             
+  color: #111;                  
+  margin-bottom: 2rem;
+">
+  Los veinte principales productos de exportación del Valle del Cauca representaron el <b>64,4%</b> del valor exportado en lo corrido de 2025 a octubre, registrando un crecimiento del <b>15,6%</b> frente al mismo periodo de 2024. De estos, 15 productos aumentaron su valor exportado, reflejando una dinámica positiva en la canasta exportadora del departamento. <br> <br> 
+<i> El café</i>  continuó liderando el crecimiento (+USD 125 millones; +103,0%). El comportamiento estuvo respaldado por incremento del precio internacional del grano y por el aumento de la producción. <br> <br> 
+Asimismo, se destacaron productos como dispositivos de almacenamiento y tarjetas inteligentes, hilos, cables y conductores aislados para electricidad y artículos de confitería sin cacao, que aportaron significativamente al incremento del valor exportado del departamento.
+</div>
+<div class="observablehq observablehq--block"><!--:aba77271:--></div>
+<h2 id="analisis-sectorial-destacado-valle-del-cauca" tabindex="-1"><a class="observablehq-header-anchor" href="#analisis-sectorial-destacado-valle-del-cauca">Análisis Sectorial Destacado (Valle del Cauca)</a></h2>
+<div style="font-family: Georgia, serif; font-size: 1.0rem; color: #5f8b14; margin-bottom: 1rem; border-bottom: 1px solid #eee; padding-bottom:10px;">
+  Exportaciones de Manufacturas
+</div>
+<div style="
+  text-align: justify;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 2rem;
+">
+  Entre enero y octubre de 2025, el Valle del Cauca
+participó con el <b>13,4%</b> de las exportaciones manufactureras de Colombia, superando en 0,6 puntos porcentuales el registro del mismo periodo de 2024. Este avance resalta el fortalecimiento de su presencia en el panorama exportador nacional.
+</div>
+<div class="observablehq observablehq--block"><!--:6cbc0473:--></div>
+<div class="economist-chart-container">
+  <div class="economist-title" style="text-align: center;">Distribución de las exportaciones
+manufactureras de Colombia– principales departamentos (%)</div>
+  <div style="text-align: center; font-size: 0.8rem; color: #666; margin-bottom: 5px;">
+    Enero - Octubre (2024 - 2025)
+  </div>
+<p><observablehq-loading></observablehq-loading><!--:26ab2f08:--></p>
+  <div style="margin-top: 10px; font-size: 0.65rem; color: #888; border-top: 1px solid #eee; padding-top: 8px;">
+      <strong>Fuente:</strong> DIAN, DANE - Cálculos Cámara de Comercio de Cali<br>
+      *Según clasificación CUCI
+  </div>
+</div>
+<br><br>
+<h3 id="desempeno-historico-manufacturero" tabindex="-1"><a class="observablehq-header-anchor" href="#desempeno-historico-manufacturero">Desempeño Histórico Manufacturero</a></h3>
+<div style="text-align: justify; font-family: Georgia, serif; font-size: 1rem; line-height: 1.6; color: #111; margin-bottom: 2rem;">
+  El valor de las exportaciones manufactureras del Valle del Cauca alcanzó los <b>USD 1.225 millones</b> en lo acumulado de 2025 a octubre, superando la cifra en un 39,7% en comparación con 2019, y registrando un incremento del 9,7% respecto al mismo periodo de 2024.
+</div>
+<div class="observablehq observablehq--block"><!--:722d4374:--></div>
+<div class="economist-chart-container"> <div class="economist-title" style="text-align: center; color: #002b49; margin-bottom: 20px;"> Valor de las exportaciones manufactureras* del Valle del Cauca (USD miles**) <div style="font-weight: normal; font-size: 0.85em; color: #666; margin-top:4px;">Enero - Octubre (2024 - 2025)</div> </div>
+<p><observablehq-loading></observablehq-loading><!--:48c35098:--></p>
+<div style="margin-top: 15px; font-size: 0.65rem; color: #888; border-top: 1px solid #ddd; padding-top: 10px;"> <strong>Fuente:</strong> DIAN, DANE - Cálculos Cámara de Comercio de Cali<br> *Según clasificación CUCI<br> **Por efecto del redondeo en miles, los totales pueden diferir ligeramente </div> </div> <br>
+<br>
+<h3 id="principales-grupos-de-productos-manufactureros-exportados" tabindex="-1"><a class="observablehq-header-anchor" href="#principales-grupos-de-productos-manufactureros-exportados">Principales grupos de productos manufactureros exportados</a></h3>
+<!-- TEXTO MEJORADO ESTILO THE ECONOMIST -->
+<div style="
+  text-align: justify;          
+  font-family: Georgia, serif;  
+  font-size: 1rem;              
+  line-height: 1.6;             
+  color: #111;                  
+  margin-bottom: 2rem;
+">
+  En enero-octubre de 2025, los 10 productos
+manufactureros con mayor crecimiento absoluto
+sumaron <b>USD 1.089 millones</b>, equivalentes al 89% del valor exportado por el Valle del Cauca. El mayor aporte provino de <i> maquinaria eléctrica</i>  (+USD 32,1 millones), seguido por <i> productos farmacéuticos</i>  y <i> aceites esenciales</i> , <i> perfumería</i> , <i>cosméticos</i> . Esto sugiere una canasta exportadora más sofisticada impulsada por bienes de mayor valor agregado.
+</div>
+<div class="observablehq observablehq--block"><!--:13dc4c2e:--></div>
+<br>
+<h3 id="principales-destinos-de-las-exportaciones-manufactureras" tabindex="-1"><a class="observablehq-header-anchor" href="#principales-destinos-de-las-exportaciones-manufactureras">Principales destinos de las exportaciones manufactureras</a></h3>
+<div style="
+  text-align: justify;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 2rem;
+">
+  Entre enero y octubre de 2025, el Valle del Cauca
+participó con el <b>13,4%</b> de las exportaciones manufactureras de Colombia, superando en 0,6 puntos porcentuales el registro del mismo periodo de 2024. Este avance resalta el fortalecimiento de su presencia en el panorama exportador nacional.
+</div>
+<div class="observablehq observablehq--block"><!--:978746ab:--></div>
+<!-- ...existing code... -->
+<div class="economist-chart-container">
+  <div class="economist-title" style="text-align: center; margin-bottom: 10px;">
+    Participación de los principales países destino (%)
+  </div>
+  <div style="text-align: center; font-size: 0.8rem; color: #666; margin-bottom: -40px;">
+    Enero - Octubre (2024 - 2025)
+  </div>
+<p><observablehq-loading></observablehq-loading><!--:6069df17:--></p>
+  <div style="margin-top: 10px; font-size: 0.65rem; color: #888; border-top: 1px solid #eee; padding-top: 10px;">
+      <strong>Fuente:</strong> DIAN, DANE - Cálculos Cámara de Comercio de Cali
+  </div>
+</div>
+<br>
+<br>
+<!-- PIE DE PÁGINA PERSONALIZADO -->
+<div style="text-align: center; margin-top: 30px; padding-top: 15px; border-top: 1px solid #ddd; font-size: 0.7rem; color: #999;">
+  Actualizado el 16 de enero de 2026
+</div>
+</main>
+</div>
+</body>
+</html>
