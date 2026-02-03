@@ -1177,7 +1177,7 @@ function graficoTortaDestinos(data, {width}) {
 
   const pie = d3.pie().sort(null).value(d => d.valor);
   const arc = d3.arc().innerRadius(0).outerRadius(radius);
-  const arcLabelOutside = d3.arc().innerRadius(radius * 1.3).outerRadius(radius * 1.3);
+  const arcLabelOutside = d3.arc().innerRadius(radius * 1.15).outerRadius(radius * 1.15);
 
   const arcs = pie(data);
 
