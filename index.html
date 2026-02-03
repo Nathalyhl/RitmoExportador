@@ -1235,7 +1235,7 @@ function graficoTortaDestinos(data, {width}) {
        
        // Decidir si va a la izquierda o derecha
        const midAngle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-       posC[0] = radius * 1.5 * (midAngle < Math.PI ? 1 : -1); 
+       posC[0] = radius * 1.25 * (midAngle < Math.PI ? 1 : -1); 
 
        // Línea conectora
        lines.append("polyline")
